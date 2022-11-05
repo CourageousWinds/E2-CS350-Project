@@ -12,7 +12,7 @@ public class Vocabulary {
         // Create the input stream and scanner
         FileInputStream fin = new FileInputStream("Test.txt");
         Scanner fileInput = new Scanner(fin);
-        // Create teh arrayList
+        // Create the arrayList
         ArrayList<String> words = new ArrayList<String>();
         ArrayList<String> count = new ArrayList<String>();
 
