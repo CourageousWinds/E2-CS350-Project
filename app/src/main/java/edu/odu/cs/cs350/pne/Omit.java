@@ -48,3 +48,7 @@ public class Omit {
 //  }
 // addToSignature(currentWord)
 // }
+
+// Now it's a matter of understanding the code of the java file that is reponsible for extracting document words one at a time. My plan is each word will be filtered into 
+// this "Omit" function to see if it's a common word or not. If the given extracted word is NOT a common word, it will be returned, stored as a value in the original function call.
+// If it IS a common word, the word won't be returned at all.
