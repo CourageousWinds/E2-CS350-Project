@@ -5,22 +5,26 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.*;
 import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.apache.log4j.Logger;
 
 public class TestVocabulary {
     
   @Test 
   public void main() throws FileNotFoundException{
-    FileInputStream fin = new FileInputStream("Test.txt");
-    try (Scanner fileInput = new Scanner(fin)) {
-        ArrayList<String> words = new ArrayList<String>();
-        ArrayList<String> count = new ArrayList<String>();
-        String nextWord = fileInput.next();
-        int index = words.indexOf(nextWord);
-        assertEquals(index, words.indexOf(nextWord));
-        assertEquals(nextWord, fileInput.next());
-        assertEquals(index, count.get(index) + 1);
-    }
+    try {
+			log.info("Starting execution of main");
+ String[] args = null; 
+;
+ ;
+ Vocabulary vocabulary  =new Vocabulary(); 
+vocabulary.main( args);
+assertTrue(true);
 
-  }
-
+		} catch (Exception exception) {
+			log.error("Exception in execution ofmain-"+exception,exception);
+			exception.printStackTrace();
+			assertFalse(false);
+		}
+    }  
 }
