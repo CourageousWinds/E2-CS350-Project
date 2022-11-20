@@ -11,20 +11,5 @@ import org.apache.log4j.Logger;
 public class TestVocabulary {
     
   @Test 
-  public void main() throws FileNotFoundException{
-    try {
-			log.info("Starting execution of main");
- String[] args = null; 
-;
- ;
- Vocabulary vocabulary  =new Vocabulary(); 
-vocabulary.main( args);
-assertTrue(true);
-
-		} catch (Exception exception) {
-			log.error("Exception in execution ofmain-"+exception,exception);
-			exception.printStackTrace();
-			assertFalse(false);
-		}
-    }  
+   
 }
