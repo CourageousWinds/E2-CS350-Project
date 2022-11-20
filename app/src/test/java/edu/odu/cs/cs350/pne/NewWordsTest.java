@@ -11,8 +11,8 @@ public class NewWordsTest {
     @Test  
     public void main() throws FileNotFoundException{  
 		String[] args = null; 
- NewWords newWords  =new NewWords(); 
-newWords.main(args);
+ new NewWords(); 
+NewWords.main(args);
 assertTrue(true);
 }
 

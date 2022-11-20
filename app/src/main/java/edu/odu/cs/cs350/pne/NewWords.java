@@ -9,11 +9,12 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+
 import java.io.FileNotFoundException;
 
 public class NewWords {
     
-public void main(String[] args) throws FileNotFoundException {
+public static void main(String[] args) throws FileNotFoundException {
 
     HashMap<String, Integer> map = new HashMap<String, Integer>();
 

@@ -1,8 +1,10 @@
+package edu.odu.cs.cs350.pne;
+
 /*
  * Created 10/26 by cs_zelle001 for a starting point.
  */
 
-package edu.odu.cs.cs350.pne;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +14,7 @@ import java.util.Scanner;
 
 public class Vocabulary {
 
-    public void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException {
 
         HashMap<String, Integer> vocab = new HashMap<String, Integer>();
     
@@ -20,10 +22,12 @@ public class Vocabulary {
         while (txtFile.hasNext()){
             String word = txtFile.next();
             if (vocab.containsKey(word)){
-                int count = vocab.get(word); 
+                int count = vocab.get(word) + 1; 
                 vocab.put(word, count);
-            }
-            else{
+            if (count >= 5)
+            vocab.put(word, 1);
+            
+            if (count < 5)
                 vocab.put(word, 0);
             }
         }
