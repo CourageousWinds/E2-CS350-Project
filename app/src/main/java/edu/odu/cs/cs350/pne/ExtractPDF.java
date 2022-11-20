@@ -14,7 +14,7 @@ import org.apache.tika.sax.BodyContentHandler;
 import org.apache.tika.Tika;
 
 public class ExtractPDF {
-    BodyContentHandler handler = new BodyContentHandler( writeLimit: -1);
+    BodyContentHandler handler = new BodyContentHandler(writeLimit: -1);
     Metadata metadata = new Metadata();
     ParseContext pcontext = new ParseContext();
     FileInputStream inputStream;
@@ -29,7 +29,7 @@ public class ExtractPDF {
             e.printStackTrace();
         } catch (SAXException e) {
             e.printStackTrace();
-        } catch (TikaException) {
+        } catch (TikaException e) {
             e.printStackTrace();
         }
     }

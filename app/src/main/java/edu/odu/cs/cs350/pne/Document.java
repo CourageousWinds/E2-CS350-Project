@@ -13,23 +13,25 @@ import java.util.*;
 
 public class Document {
 
-    public static void main(String[] args) throws IOException{
+    public static Map<String, Integer> documentMap(String[] args) throws IOException{
 
         //Going to Read the words into a Map
-        Map<String, int> wordMap 
+        Map<String, Integer> wordMap 
             =hashMapFromFile(args);
 
         //Iterate through Map
         for (Map.Entry<String,int> entry :
             wordMap.entrySet()){
                 system.out.println(entry.getKey() + " : "
-                 + entry.getValue())
+                 + entry.getValue());
             }
+
+        return wordMap;
         
     }
 
     public static Map<String, int> hashMapFromFile(String filepath){
-        Map<String, int> mapText
+        Map<String, Integer> mapText
             = new HashMap<String, int>();
             BufferedReader br = null;
 
