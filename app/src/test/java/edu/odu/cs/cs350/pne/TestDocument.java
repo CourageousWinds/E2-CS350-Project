@@ -9,16 +9,17 @@ import org.junit.jupiter.api.Test;
 public class TestDocument {
 
     @Test
-    public void main(String[] args) throws FileNotFoundException{
-        
-        Map<String, int> wordMap = new Map<String, int>();
+    public static Map<String, Integer> documentMap(String[] args) throws FileNotFoundException{
+        //assertEquals (args==null);
+        Map<String, Integer> wordMap = new Map<String, Integer>();
 
+        return wordMap;
     }
 
     @Test
-    public static Map<String, int>(){
-        Map<String, int> mapText
-            = new HashMap<String, int>();
+    public static Map<String, Integer>(){
+        Map<String, Integer> mapText
+            = new HashMap<String, Integer>();
             BufferedReader br = null;
             try {
                 
